@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'Base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+    <style>
+        .class-deck{
+        padding:20px
+        }
+    </style>
+</head>
+<body>
+
+{% block content%}
+
+{%for i in range(0,5)%}
+<div class="card-deck mt-4" >
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+  </div>
+</div>
+{%end for%}
+{% endblock %}
+
+</body>
+</html>
